@@ -1,0 +1,62 @@
+[alias]
+  # commit all changes
+  ca = !git add -A && git commit -av
+
+  # commit logs and status
+  l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  ll = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  s = status -s
+
+  # verbose
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+
+  # sharing
+  archivemaster = archive master --format=zip --output=master.zip
+
+[apply]
+  # detect whitespace errors during patching
+  whitespace = fix
+
+[commit]
+  # message displayed during interactive git commit
+  template = ~/.gitmessage
+
+[core]
+  autocrlt = input
+  excludesfile = ~/.gitignore.global
+  whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+  pager = diff-so-fancy | less --tabs=4 -RFX
+
+[color]
+  ui = auto
+
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+
+[color "diff"]
+  meta = yellow
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+
+[credential]
+  # save login for 90 minutes
+  helper = cache --timeout=5400
+
+[diff]
+  # detect copies as well as renames
+  renames = copies
+
+[merge]
+  # include summary of merged commits in newly created merger commit messages
+  log = true
+  # do not make seperate merge commits
+  ff = true
+
