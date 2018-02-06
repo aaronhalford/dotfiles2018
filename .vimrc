@@ -11,6 +11,11 @@ if filereadable(expand("~/.vimrc.keymaps"))
 endif
 
 " Separate file for theme
+if filereadable(expand("~/.vimrc.plugins"))
+  source ~/.vimrc.plugins
+endif
+
+" Separate file for theme
 if filereadable(expand("~/.vimrc.theme"))
   source ~/.vimrc.theme
 endif
