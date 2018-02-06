@@ -1,0 +1,60 @@
+" quick fixes
+set t_Co=256
+syntax on
+set background=light
+set encoding=utf-8
+set mouse=a
+set history=100
+set tabpagemax=50
+set shortmess=atI
+
+" file management
+set autoread
+set nobackup
+set nowritebackup
+set noswapfile
+
+" movement and keys
+set nostartofline
+set backspace=2
+
+" new panes
+set splitbelow
+set splitright
+
+" tab and softtab spacing
+set autoindent
+set copyindent
+set expandtab
+set softtabstop=2
+set shiftround
+set shiftwidth=2
+set smarttab
+set tabstop=4
+
+" visual
+set display+=lastline
+set hidden
+set laststatus=2
+set nowrap
+set number
+set numberwidth=5
+set ruler
+set scrolloff=3
+set showcmd
+set showmatch
+set wildmenu
+
+" show extra whitespace
+set list listchars=tab:»·,trail:·
+
+" search
+set complete-=i
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" code folding
+set foldmethod=indent
+set foldlevel=99

@@ -1,0 +1,2 @@
+" Change leader key from \ (backslash) to  (space)
+let mapleader = " "
