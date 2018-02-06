@@ -1,0 +1,4 @@
+# corrections
+unsetopt correct_all                # Do not autocorrect commands & file names
+setopt completeinword               # not just at the end
+setopt nobeep                       # avoid beeping

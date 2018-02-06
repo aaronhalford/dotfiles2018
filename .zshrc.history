@@ -1,0 +1,20 @@
+# history
+export HISTFILE=~/.zhistory
+export HISTSIZE=9001
+export SAVEHIST=9001
+setopt inc_append_history           # incrementally append rather than overwrite history
+setopt extended_history             # save timestamp and runtime info
+setopt share_history                # import new commands from the history file also in other zsh-session
+setopt hist_reduce_blanks           # remove blank lines from history
+setopt hist_ignore_all_dups         # remove all duplicates from history
+setopt hist_find_no_dups            # [unset] ignore dupes in history search
+setopt hist_ignore_dups             # this will not put _consecutive_ duplicates in the history
+setopt hist_ignore_space            # if any command starts with a whitespace, it will not be saved
+setopt hist_verify                  # [unset] for history substitution, put the substituted line into the line editor
+
+# arrow up/down searches in history if line is already started
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
+
+# fzf settings
+# ???

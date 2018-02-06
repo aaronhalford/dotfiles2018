@@ -1,0 +1,17 @@
+# function - change directory with auto clear and ls
+function chpwd() {
+  emulate -L zsh
+  #clear && ls -A --color --group-directories-first
+  clear && colorls -A --sd --light
+}
+
+# function - colored man pages with less command
+function man() {
+  LESS_TERMCAP_md=$'\e[01;31m' \
+  LESS_TERMCAP_me=$'\e[0m' \
+  LESS_TERMCAP_se=$'\e[0m' \
+  LESS_TERMCAP_so=$'\e[01;44;33m' \
+  LESS_TERMCAP_ue=$'\e[0m' \
+  LESS_TERMCAP_us=$'\e[01;32m' \
+  command man "$@"
+}
