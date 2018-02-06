@@ -12,6 +12,12 @@
   branches = branch -a
   remotes = remote -v
 
+  # fix errors
+  amend = commit --amend --reuse-message=HEAD
+
+  # contributions
+  contributors = shortlog --summary --numbered
+
   # sharing
   archivemaster = archive master --format=zip --output=master.zip
 
@@ -46,6 +52,11 @@
   new = green bold
   whitespace = red reverse
 
+[ color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
 [credential]
   # save login for 90 minutes
   helper = cache --timeout=5400
@@ -60,3 +71,6 @@
   # do not make seperate merge commits
   ff = true
 
+[push]
+  # push the current branch only
+  default = current

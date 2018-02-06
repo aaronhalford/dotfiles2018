@@ -1,0 +1,13 @@
+# prefix
+unbind C-b
+set -g prefix C-Space
+bind C-Space send-prefix
+
+# pane splitting (my way - visually makes sense)
+bind | split-window -h -c "#{pane_current_path}"
+bind \ split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
+bind _ split-window -v -c "#{pane_current_path}"
+
+# zoom into pane and hide status bar
+bind-key z resize-pane -Z \; if-shell "tmux list-panes -F '#F' | grep -q Z" "set -g status off" "set -g status on"

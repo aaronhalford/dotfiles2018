@@ -1,0 +1,13 @@
+# count starting at 1 (0 is default)
+set -g base-index 1                           # remap first window from key "0" to key "1"
+set -g pane-base-index 1                      # remap first pane to 1
+
+# renumber windows sequentially after closing any of them
+set -g renumber-windows on
+
+# no distractions
+set-option -g bell-action none                # quiet mode
+setw -g monitor-activity off                  # monitor window activity (off)
+set -g visual-activity off                    # show notification of window activity (off)
+setw -g automatic-rename off                  # window title renames itself to last issued command (off)
+set-option -g allow-rename off                # stop prompt from renaming window

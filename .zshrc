@@ -121,7 +121,10 @@ alias powersave='sudo cpupower frequency-set -g powersave'
 #alias ytdlv='youtube-dl -ciwv -f best --output "%(uploader)s - %(title)s - %(id)s.%(ext)s"'                                             # video only in best quality
 #alias ytdlb='youtube-dl -ciwvxk -f best --output "%(uploader)s - %(title)s - %(id)s.%(ext)s"'                                           # best quality, extract audio, keep video, verbose, name template
 #alias ytdlp='youtube-dl -ciwvxk -f best --output "%(uploader)s - %(playlist_title)s - %(playlist_index)s - %(title)s - %(id)s.%(ext)s"' # playlist extract audio (does not get best quality???)
-alias ytdlpo='youtube-dl --output "%(uploader)s - %(playlist_title)s - %(playlist_index)s - %(title)s - %(id)s.%(ext)s"'                # output template only, run -F to get best formats for (-f video+audio)
+alias ytdl-playlist='youtube-dl --output "%(uploader)s - %(playlist_title)s - %(playlist_index)s - %(title)s - %(id)s.%(ext)s"'          # output template only, run -F to get best formats for (-f video+audio)
+alias ytdk-album='youtube-dl -x -o "%(autonumber)s - %(title)s.%(ext)s" --autonumber-size 2 --audio-format=opus'
+alias ytdl-a='youtube-dl -x -f bestaudio --prefer-free-formats -i --output "%(title)s.%(ext)s"'
+alias ytdl-v='youtube-dl -f bestvideo+bestaudio --prefer-free-formats -i --output "%(title)s.%(ext)s"'
 
 # function - change directory with auto clear and ls
 function chpwd() {
