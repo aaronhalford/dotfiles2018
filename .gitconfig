@@ -52,7 +52,7 @@
   new = green bold
   whitespace = red reverse
 
-[ color "status"]
+[color "status"]
   added = yellow
   changed = green
   untracked = cyan

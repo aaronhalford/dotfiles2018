@@ -1,44 +1,44 @@
 # pane theme -------------------------------------------------------------------
-set -g pane-border-fg black                   # pane non active border
-set -g pane-active-border-fg orange           # pane active border
+set -g pane-border-fg black
+set -g pane-active-border-fg blue
 
 # statusbar theme --------------------------------------------------------------
 set-option -g status on
 set -g status-interval 15                     # set statusbar update time
-set-option -g status-position top             # works in tmux 1.8+ only
+set-option -g status-position top
 
 # default statusbar colors
 set -g status-fg white
-set -g status-bg orange
+set -g status-bg black
 
 # default window title colors
 set-window-option -g window-status-fg white
-set-window-option -g window-status-bg orange
+set-window-option -g window-status-bg black
 
 # active window title colors
 set-window-option -g window-status-current-fg white
-set-window-option -g window-status-current-bg orange
+set-window-option -g window-status-current-bg black
 
 # command/message line colors
-set -g message-fg orange
+set -g message-fg red
 set -g message-bg black
 set -g message-attr bright
 
 # left statusbar = [active tmux window and pane]
 set -g status-left-length 30
-set -g status-left ' [#I.#P] '
+set -g status-left ' '
 
 # right statusbar = [user] [hostname]
 set -g status-right-length 30
-set -g status-right ' [#(whoami).#(hostname)] '
+set -g status-right ' #I.#P '
 
 # set window list in centre, left, or right
-set -g status-justify centre
+set -g status-justify left
 
 # window theme -----------------------------------------------------------------
 # window statusbar = [windownumber:windowname]
-setw -g window-status-format ' [#W] '
-setw -g window-status-current-format ' [#W] '
+setw -g window-status-format ' #W '
+setw -g window-status-current-format ' #W '
 
 # Terminal emulator window title
 set -g set-titles on

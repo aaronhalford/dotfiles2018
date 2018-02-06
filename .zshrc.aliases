@@ -60,7 +60,6 @@ if [[ "$LSB_DISTRIBUTOR" == "Arch" ]]; then
   alias search='pacman -Ss'
   alias clean='sudo pacman -Sc'
   alias aurupdate='pacaur -Syu' # req pacaur
-  alias removeorphans="pacman -Rns $(pacman -Qtdq)" # remove all orphan packages
 fi
 
 # aliases - application cpupower
