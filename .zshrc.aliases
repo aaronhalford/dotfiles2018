@@ -72,3 +72,6 @@ alias ytdl-playlist='youtube-dl --playlist-reverse --keep-video --extract-audio 
 alias ytdl-album='youtube-dl -x -o "%(autonumber)s - %(title)s.%(ext)s" --autonumber-size 2 --audio-format=opus'
 alias ytdl-audio='youtube-dl -x -f bestaudio --prefer-free-formats -i --output "%(title)s.%(ext)s"'
 alias ytdl-video='youtube-dl -f bestvideo+bestaudio --prefer-free-formats -i --output "%(title)s.%(ext)s"'
+
+# aliases (white/black terminal themes)
+alias glancesw='glances --theme-white'
