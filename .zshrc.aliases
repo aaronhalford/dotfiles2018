@@ -59,7 +59,7 @@ if [[ "$LSB_DISTRIBUTOR" == "Arch" ]]; then
   alias remove='sudo pacman -Rsn'
   alias search='pacman -Ss'
   alias clean='sudo pacman -Sc'
-  alias aurupdate='pacaur -Syu' # req pacaur
+  alias aurupdate='trizen -Syu' # req trizen aur helper
 fi
 
 # aliases - application cpupower
