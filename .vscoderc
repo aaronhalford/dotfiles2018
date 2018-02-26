@@ -1,10 +1,9 @@
 {
-    "workbench.colorTheme": "Github Light (rainglow)",
-    "workbench.iconTheme": "minimalistic-icons",
-    "editor.fontSize": 15,
-    "editor.fontFamily": "'Fira Code', 'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "workbench.colorTheme": "3024 Day",
     "editor.tabSize": 2,
-    "editor.renderWhitespace": "boundary",
-    "editor.fontLigatures": true,
-    "editor.minimap.enabled": false
+    "editor.fontFamily": "'CallingCode Nerd Font','Source Code Mono','Ubuntu Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 16,
+    "editor.cursorStyle": "line-thin",
+    "editor.minimap.side": "left",
+    "workbench.iconTheme": "material-icon-theme"
 }
