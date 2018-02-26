@@ -1,2 +1,5 @@
 " Change leader key from \ (backslash) to  (space)
 let mapleader = " "
+
+" turn off recording
+map q <Nop>
