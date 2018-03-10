@@ -9,6 +9,7 @@ alias g='git'
 alias mkdir='mkdir -pv'
 alias todo='$EDITOR ~/todo.txt'
 alias tmux='tmux -2'
+alias grv='TERM=xterm grv'
 
 # hardware and sofware specific fixes
 alias fixadb='sudo adb devices'
