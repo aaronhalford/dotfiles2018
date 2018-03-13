@@ -1,8 +1,11 @@
 # function - change directory with auto clear and ls
 function chpwd() {
   emulate -L zsh
-  #clear && ls -A --color --group-directories-first
-  clear && colorls -A --sd --light
+  if command -v colorls > /dev/null 2>&1; then
+    clear && colorls -A --sd --light
+  else
+    clear && ls -A --color --group-directories-first
+  fi
 }
 
 # function - colored man pages with less command
