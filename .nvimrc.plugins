@@ -1,0 +1,19 @@
+" start vim-plug for vim
+call plug#begin('~/.local/share/nvim/plugged')
+
+" My Plugins here (use single quotes)
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-bufferline'
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'junegunn/gv.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+Plug 'rking/ag.vim'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-fugitive'
+Plug 'w0rp/ale'
+
+" Add plugins to runtimepath
+call plug#end()
