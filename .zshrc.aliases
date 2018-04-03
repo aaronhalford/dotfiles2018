@@ -74,5 +74,6 @@ alias ytdl-album='youtube-dl -x -o "%(autonumber)s - %(title)s.%(ext)s" --autonu
 alias ytdl-audio='youtube-dl -x -f bestaudio --prefer-free-formats -i --output "%(title)s.%(ext)s"'
 alias ytdl-video='youtube-dl -f bestvideo+bestaudio --prefer-free-formats -i --output "%(title)s.%(ext)s"'
 
-# aliases (white/black terminal themes)
+# aliases - color modes and white/black terminal themes
 alias glancesw='glances --theme-white'
+alias tree='tree -C'
