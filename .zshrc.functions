@@ -2,7 +2,11 @@
 function chpwd() {
   emulate -L zsh
   if command -v colorls > /dev/null 2>&1; then
-    clear && colorls -A --sd --light
+    if [[ $TERMINFO == "/usr/lib/kitty/terminfo" ]]; then
+      clear && colorls -A --sd
+    else
+      clear && colorls -A --sd --light
+    fi
   else
     clear && ls -A --color --group-directories-first
   fi
