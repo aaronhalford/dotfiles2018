@@ -1,6 +1,6 @@
 # save operating system as variable
 # req for selection of correct aliases
-LSB_DISTRIBUTOR=`lsb_release -i -s`
+LSB_DISTRIBUTOR=$(lsb_release -i -s)
 
 # lazy fixes
 alias c='clear'
