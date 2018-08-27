@@ -60,7 +60,7 @@ if [[ "$LSB_DISTRIBUTOR" == "Arch" ]]; then
   alias remove='sudo pacman -Rsn'
   alias search='pacman -Ss'
   alias clean='sudo pacman -Sc'
-  alias aurupdate='trizen -Syu' # req trizen aur helper
+  alias aurupdate='yay -Syu' # req yay aur helper
 fi
 
 # aliases - application cpupower
@@ -73,6 +73,7 @@ alias ytdl-playlist='youtube-dl --playlist-reverse --keep-video --extract-audio 
 alias ytdl-album='youtube-dl -x -o "%(autonumber)s - %(title)s.%(ext)s" --autonumber-size 2 --audio-format=opus'
 alias ytdl-audio='youtube-dl -x -f bestaudio --prefer-free-formats -i --output "%(title)s.%(ext)s"'
 alias ytdl-video='youtube-dl -f bestvideo+bestaudio --prefer-free-formats -i --output "%(title)s.%(ext)s"'
+alias ytdl-mp3='youtube-dl -x -o "%(autonumber)s - %(title)s.%(ext)s" --autonumber-size 2 --audio-format=mp3'
 
 # aliases - color modes and white/black terminal themes
 alias glancesw='glances --theme-white'
