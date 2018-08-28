@@ -78,3 +78,6 @@ alias ytdl-mp3='youtube-dl -x -o "%(autonumber)s - %(title)s.%(ext)s" --autonumb
 # aliases - color modes and white/black terminal themes
 alias glancesw='glances --theme-white'
 alias tree='tree -C'
+
+# aliases - system info
+alias myip="ip -br -c a"
